@@ -1,7 +1,7 @@
 import socket
 
 sock = socket.socket()
-sock.bind(('', 8888))
+sock.bind(('localhost', 8888))
 sock.listen(1)
 while True:
     client, addr = sock.accept()
